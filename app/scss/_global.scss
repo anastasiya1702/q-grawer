@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  color: $default;
+  @extend %rubik-400;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  padding-top: 90px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  color: #7b7b7b;
+  @extend %rubik-400;
+  font-size: 14px;
+  transition: all .3s;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 26px;
+  @extend %dmsans-700;
+  color: $title;
+  margin-bottom: 25px;
+}
+
+.text {
+  text-align: center;
+  max-width: 530px;
+  margin: 0 auto 55px;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    padding-right: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 13px;
+      background-color: #727272;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: rotate(17deg);
+      top: 4px;
+      right: 11px;
+    }
+  }
+
+  &__item {
+    color: #737980;
+    position: relative;
+
+    &:last-child {
+      color: $accent;
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}
+
+.pagination {
+  padding: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    border: 1px solid $accent;
+    padding: 15px 20px;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  &__item--active {
+    background-color: $accent;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__link {
+    color: #243f4d;
+    font-size: 16px;
+    @extend %rubik-400;
+  }
+
+  &__link--active {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
