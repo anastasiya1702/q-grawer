@@ -3,6 +3,365 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 35px 0;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 190px;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &__item:not(:last-child){
+    margin-right: 20px;
+  }
+  &__link{
+    @extend %montserrat-500;
+    padding: 11px 13px;
+    border-radius: 3px;
+    transition: all .3s;
+    &:hover{
+      background-color: $accent;
+    }
+  }
+}
+.menu-btn{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  margin: 20px 30px 0 0;
+  cursor: pointer;
+}
+.menu-btn span{
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2){
+  top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3){
+  top: calc(50% + 5px);
+}
+.logo{
+  &__title{
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid $accent;
+    color: $accent;
+    font-size: 27px;
+    line-height: 100%;
+    margin-bottom: 3px;
+  }
+  &__subtitle{
+    color: $accent;
+    font-size: 12px;
+  }
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  &__item{
+    display: flex;
+  }
+  &__items:not(:last-child){
+    margin-right: 30px;
+  }
+  &__items{
+    align-items: center;
+    justify-content: center;
+  }
+  &__link{
+    @extend %montserrat-700;
+    font-size: 22px;
+    display: inline-block;
+    transition: all .3s;
+    margin-bottom: 5px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__btn{
+    @extend %btn;
+    display: block; 
+    margin-left: 43px;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+      background-color: #fff;
+    }
+  }
+  &__text{
+    color: #fff;
+    font-size: 16px;
+    @extend %montserrat-700;
+    text-align: end;
+  }
+  &__adress{
+    @extend %montserrat-400;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+.social-list{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  &__item:not(:last-child){
+    margin-right: 15px;
+  }
+  &__img{
+    transition: all .3s;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+  &__footer{
+    justify-content: flex-start;
+  }
+}
+.header-bottom{
+  border-top: 1px solid gray;
+  padding: 30px 0;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url('../images/header-bottom.png');
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 72px;
+      max-width: 840px;
+      width: 100%;
+      height: 75px;
+      z-index: -1;
+    }
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 3px;
+  }
+  &__item:not(:last-child){
+    margin-right: 30px;
+    &::after{
+      content: url('../images/svg/arrow-list.svg');
+    }
+  }
+  &__link{
+    color: $title;
+    text-transform: uppercase;
+    font-size: 18px;
+    @extend %montserrat-500;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+    }
+  } 
+}
+.form-search{
+  display: flex;
+  max-width: 170px;
+  width: 100%;
+  height: 30px;
+  &__input{
+    max-width: 520px;
+    width: 100%;
+    background-color: gray;
+    padding: 8px 11px;
+    border-radius: 3px;
+    &::placeholder{
+      color: #fff;
+      font-size: 14px;
+      text-decoration: underline;
+      @extend %montserrat-400;
+    }
+  }
+  &__btn{
+    background-color: gray;
+    width: 25px;
+    border-radius: 3px;
+    margin-left: -5px;
+  }
+}
+.footer{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+}
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.logo-footer{
+  margin-bottom: 30px;
+}
+.form-search__footer{
+  margin: 0 auto;
+  max-width: 450px;
+  width: 100%; 
+}
+.footer-inner{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  margin-bottom: 15px;
+  &__button{
+    margin-right: 60px;
+  }
+  &__btn{
+    @extend %btn;
+    height: 50px;
+    transition: all .3s;
+    &:hover{
+      background-color: $link;
+      color: $accent;
+    }
+  }
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item:not(:last-child){
+    margin-right: 30px;
+  }
+  &__items:not(:last-child){
+    margin-bottom: 5px;
+  }
+  &__link{
+    text-transform: uppercase;
+    @extend %montserrat-500;
+    font-size: 12px;
+    transition: all .3s;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+  &__title{
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    color: $link;
+    font-size: 12px;
+    text-transform: uppercase;
+    @extend %montserrat-500;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: $accent;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__social{
+    margin-top: -35px;
+    max-width: 200px;
+    margin-bottom: 15px;
+  }
+}
+.footer-catalogue{
+  &__link{
+    font-size: 12px;
+    @extend %montserrat-500;
+    transition: all .3s;
+    &:hover{
+      opacity: 0.6;
+      text-decoration: underline;
+    }
+  }
+}
+.footer-adress{
+  max-width: 210px;
+  width: 100%;
+  margin-bottom: 15px;
+  &__text{
+    color: $link;
+    font-size: 16px;
+    @extend %montserrat-700;
+  }
+  span{
+    text-decoration: underline;
+    color: $link;
+    font-size: 16px;
+    @extend %montserrat-400;
+    opacity: 0.8;
+  }
+  &__list{
+    margin-bottom: 15px;
+  }
+  &__item:not(:last-child){
+    margin-bottom: 5px;
+  }
+  &__link{
+    font-size: 16px;
+    @extend %montserrat-700;
+    transition: all .3s;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__days{
+    max-width: 158px;
+    margin-bottom: 20px;
+  }
+  &__numbers{
+    color: $link;
+    font-size: 16px;
+    @extend %montserrat-400;
+    opacity: 0.8;
+  }
+}
+.footer-bottom{
+  padding: 20px 0;
+  border-top: 2px solid #E5E5E5;
+  &__list{
+    margin-bottom: 5px;
+  }
+  &__link{
+    font-size: 12px;
+    color: $link;
+    @extend %montserrat-400;
+    transition: all .3s;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__copy{
+    text-align: center;
+    font-size: 12px;
+    color: $link;
+    @extend %montserrat-400;
+  }
+}
+
+
 
 
 

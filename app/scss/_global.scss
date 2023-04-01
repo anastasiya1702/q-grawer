@@ -4,17 +4,16 @@ body {
 }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
-  color: $default;
-  @extend %rubik-400;
+  color: $title;
   display: flex;
   flex-direction: column;
 }
 
 .main {
   flex-grow: 1;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 .container {
@@ -24,64 +23,60 @@ body {
 }
 
 a {
-  color: #7b7b7b;
-  @extend %rubik-400;
-  font-size: 14px;
-  transition: all .3s;
+  color: $link;
+  @extend %montserrat-400;
+  font-size: 16px;
 }
 
 .title {
   text-align: center;
-  font-size: 36px;
+  font-size: 38px;
   line-height: 26px;
-  @extend %dmsans-700;
+  @extend %montserrat-700;
   color: $title;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .text {
   text-align: center;
-  max-width: 530px;
   margin: 0 auto 55px;
 }
 
-.breadcrumbs {
+.breadcrumbs{
   display: inline-flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-
-  &__list {
+  padding-bottom: 60px;
+  &__list{
     display: flex;
   }
-
-  &__item:not(:last-child) {
-    padding-right: 20px;
-
-    &::before {
+  &__item:not(:last-child){
+    padding-right: 25px;
+    &::before{
       content: "";
       position: absolute;
-      width: 1px;
-      height: 13px;
-      background-color: #727272;
+      width: 6px;
+      height: 6px;
+      background-color: $accent;
       background-repeat: no-repeat;
       background-size: cover;
-      transform: rotate(17deg);
-      top: 4px;
-      right: 11px;
+      border-radius: 50%;
+      top: 10px;
+      right: 9px;
     }
   }
-
-  &__item {
-    color: #737980;
+  &__item{
+    color: $title;
     position: relative;
-
-    &:last-child {
+    &:last-child{
       color: $accent;
     }
   }
-
-  &__link {
+  &__link{
     color: inherit;
+    @extend %montserrat-400;
+    font-size: 18px;
   }
 }
 
@@ -116,7 +111,7 @@ a {
   &__link {
     color: #243f4d;
     font-size: 16px;
-    @extend %rubik-400;
+    @extend %montserrat-400;
   }
 
   &__link--active {

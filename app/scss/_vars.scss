@@ -1,46 +1,36 @@
-$accent: #a3bbc8;
-$default: #222933;
-$title: #191919;
-$bg: #f6f6f6;
+$accent: #FF3446;
+$title: #454545;
+$link: #FFF;
 
-%dmsans-700 {
-  font-family: 'DMSans-Bold';
+%montserrat-700 {
+  font-family: 'Montserrat-Bold';
   font-weight: 700;
 }
 
-%dmsans-500 {
-  font-family: 'DMSans-Medium';
+%montserrat-500 {
+  font-family: 'Montserrat-Medium';
   font-weight: 500;
 }
 
-%dmsans-400 {
-  font-family: 'DMSans-Regular';
+%montserrat-400 {
+  font-family: 'Montserrat-Regular';
   font-weight: 400;
 }
 
-%rubik-500 {
-  font-family: 'Rubik-Medium';
-  font-weight: 500;
-}
-
-%rubik-400 {
-  font-family: 'Rubik-Regular';
+%roboto-400 {
+  font-family: 'Roboto-Regular';
   font-weight: 400;
-}
-
-%rubik-300 {
-  font-family: 'Rubik-Light';
-  font-weight: 300;
 }
 
 %btn {
   background-color: $accent;
   font-size: 14px;
-  @extend %dmsans-400;
-  color: #fff;
-  padding: 12px 23px;
+  @extend %montserrat-700;
+  color: $link;
+  padding: 12px 11px;
   transition: all .3s;
   border: 1px solid transparent;
+  border-radius: 3px;
 }
 
 %checkbox-hidden,
