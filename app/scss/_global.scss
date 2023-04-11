@@ -13,7 +13,7 @@ body {
 
 .main {
   flex-grow: 1;
-  padding-top: 60px;
+  padding-top: 15px;
 }
 
 .container {
@@ -31,19 +31,65 @@ a {
 .title {
   text-align: center;
   font-size: 38px;
-  line-height: 26px;
+  line-height: 100%;
   @extend %montserrat-700;
   color: $title;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   text-transform: uppercase;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: $accent;
+    bottom: -15px;
+    left: 48%;
+  }
 }
 
-.text {
+.subtitle{
   text-align: center;
-  margin: 0 auto 55px;
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #cdced6;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    background-color: $accent;
+    width: 150px;
+    height: 3px;
+    bottom: -2px;
+    left: 44%;
+  }
+  &::after{
+    content: url('../images/svg/subtitle-after.svg');
+    position: absolute;
+    bottom: -9px;
+    right: 49%;
+  }
+  &__link{
+    font-size: 18px;
+    line-height: 100%;
+    @extend %montserrat-400;
+    color: $title;
+    opacity: 0.8;
+    text-transform: uppercase;
+  } 
+}
+
+.text{
+  font-size: 16px;
+  line-height: 130%;
+  @extend %montserrat-400;
+  color: $title;
+  margin: 0 auto 25px;
+  max-width: 1030px;
 }
 
 .breadcrumbs{
+  padding-top: 30px;
   display: inline-flex;
   justify-content: flex-start;
   flex-wrap: wrap;
