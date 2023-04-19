@@ -84,16 +84,14 @@ a {
   line-height: 130%;
   @extend %montserrat-400;
   color: $title;
-  margin: 0 auto 25px;
+  margin: 0 auto 30px;
   max-width: 1030px;
 }
 
 .breadcrumbs{
-  padding-top: 30px;
   display: inline-flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding-bottom: 60px;
   &__list{
     display: flex;
   }
