@@ -84,9 +84,44 @@
             <a class="header-inner__link header-inner__link--tel" href="tel:+80956321116">
               +8 (095) 632-11-16
             </a>
-            <button class="header-inner__btn" type="submit">
+            <button class="header-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-11">
               Заказать звонок
             </button>
+            <div class="_modal" data-modal="modal-11">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      Заказать звонок
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        отправить заявку
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="header-inner__items">
             <p class="header-inner__text">
@@ -1175,9 +1210,44 @@
       </div>
       <div class="footer-inner">
         <div class="footer-inner__button">
-          <button class="footer-inner__btn" type="submit">
+          <button class="footer-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-12">
             Заказать звонок
           </button>
+          <div class="_modal" data-modal="modal-12">
+            <div class="modal-bg">
+              <div class="modal-body">
+                <div class="modal-close">
+                  <img src="images/svg/close.svg" alt="close">
+                </div>
+                <div class="modal-content modal-call">
+                  <h2 class="title title-form modal-call__title">
+                    Заказать звонок
+                  </h2>
+                  <form class="modal-call__form" action="#">
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="text" placeholder="Имя">
+                    </label>
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                    </label>
+                    <label class="modal-call__label-checkbox" for="#">
+                      <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                      <p class="modal-call__text">
+                        Нажимая на кнопку Отправить, Вы соглашаетесь с
+                        <a class="modal-call__link" href="#">
+                          правилами обработки персональных данных
+                        </a>
+                      </p>
+                    </label>
+                    <button class="modal-call__btn">
+                      отправить заявку
+                    </button>
+                    <span class="modal-call__span">*Поля обязательные для заполения</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="footer-inner__nav">
           <div class="footer-inner__item">

@@ -9,6 +9,9 @@ body {
   color: $title;
   display: flex;
   flex-direction: column;
+  &._locked{
+    overflow: hidden;
+  }
 }
 
 .main {
@@ -48,7 +51,7 @@ a {
   }
 }
 
-.title-product{
+.title-form{
   font-size: 30px;
   margin-bottom: 30px;
 }
