@@ -83,6 +83,33 @@ $(function () {
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
   });
 
+  $('.price-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.price-tabs__top-item').removeClass('price-tabs__top-item--active');
+    $(this).addClass('price-tabs__top-item--active');
+
+    $('.price-tabs__content-item').removeClass('price-tabs__content-item--active');
+    $($(this).attr('href')).addClass('price-tabs__content-item--active');
+  });
+
+  $('.price-gallery__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.price-gallery__top-item').removeClass('price-gallery__top-item--active');
+    $(this).addClass('price-gallery__top-item--active');
+
+    $('.price-gallery__content-item').removeClass('price-gallery__content-item--active');
+    $($(this).attr('href')).addClass('price-gallery__content-item--active');
+  });
+
+  $('.gallery-price__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.gallery-price__top-item').removeClass('gallery-price__top-item--active');
+    $(this).addClass('gallery-price__top-item--active');
+
+    $('.gallery-price__content-item').removeClass('gallery-price__content-item--active');
+    $($(this).attr('href')).addClass('gallery-price__content-item--active');
+  });
+
   $('.js-collapse-btn').on('click', function () {
     $(this).siblings('.js-collapse-box').slideToggle();
     $(this).toggleClass('js-collapse-btn--active');

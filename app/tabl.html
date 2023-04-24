@@ -1,0 +1,4205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header" style="background-image: url('images/header.png');">
+    <div class="container">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Примеры работ
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Галерея
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <div class="basket">
+          <a class="basket__link" href="#">
+            <img class="basket__img" src="images/svg/basket.svg" alt="корзина">
+          </a> 
+        </div>
+      </nav>
+      <div class="header-inner">
+        <div class="header-inner__item">
+          <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <h2 class="logo__title">
+                Q-GRAVER.com
+              </h2>
+              <p class="logo__subtitle">
+                ЦЕНТР ЛАЗЕРНОЙ ГРАВИРОВКИ
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="header-inner__item">
+          <div class="header-inner__items">
+            <a class="header-inner__link header-inner__link--mail" href="mailto:info@q-graver.com">
+              info@q-graver.com
+            </a>
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img class="social-list__img" src="images/svg/whatsapp.svg" alt="whatsapp">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img class="social-list__img" src="images/svg/telegram.svg" alt="telegram">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-inner__items">
+            <a class="header-inner__link header-inner__link--tel" href="tel:+80956321116">
+              +8 (095) 632-11-16
+            </a>
+            <button class="header-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-16">
+              Заказать звонок
+            </button>
+            <div class="_modal" data-modal="modal-16">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      Заказать звонок
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        отправить заявку
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-inner__items">
+            <p class="header-inner__text">
+              Адрес:
+            </p>
+            <span class="header-inner__adress">
+              Украина,<br>
+              ул. Бакунинская 14 стр. 11
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="header-bottom__wrapper">
+          <ul class="header-bottom__list">
+            <li class="header-bottom__item">
+              <a class="header-bottom__link" href="#">
+                Услуги и цены
+              </a>
+            </li>
+            <li class="header-bottom__item">
+              <a class="header-bottom__link" href="#">
+                Гравировка
+              </a>
+            </li>
+            <li class="header-bottom__item">
+              <a class="header-bottom__link" href="#">
+                Таблички
+              </a>
+            </li>
+            <li class="header-bottom__item">
+              <a class="header-bottom__link" href="#">
+                Товары
+              </a>
+            </li>
+            <li class="header-bottom__item">
+              <a class="header-bottom__link" href="#">
+                Акции
+              </a>
+            </li>
+          </ul>
+          <form class="form-search" action="#">
+            <input class="form-search__input" type="text" placeholder="Введите запрос">
+            <button class="form-search__btn" type="submit">
+              <img src="images/svg/search.svg" alt="search images">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="top">
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Q-GRAVER
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                Таблички
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="tablets">
+      <div class="container">
+        <h2 class="title">
+          таблички
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            Выберите нужный раздел
+          </a>
+        </h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed
+          tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Commodo
+          volutpat sollicitudin eu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc.
+          Et, porta fringilla sed tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient
+          pellentesque. Commodo volutpat sollicitudin eu
+        </p>
+        <div class="slider">
+          <div class="slider__items">
+            <div class="content-images content-tablets">
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  шильдик
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на здание
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на дверь
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  в офис
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на стол
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__Item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на крест
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-tablets">
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  шильдик
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на здание
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на дверь
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  в офис
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на стол
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__Item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на крест
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-tablets">
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  шильдик
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на здание
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на дверь
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  в офис
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на стол
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__Item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на крест
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-tablets">
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  шильдик
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на здание
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на дверь
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  в офис
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на стол
+                </p>
+              </div>
+              <div class="content-images__item content-images__item--hover content-tablets__Item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-tablets__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <p class="content-images__text content-tablets__text">
+                  на крест
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-link">
+          <a class="bottom-link__link bottom-link__link--reviews" href="#">
+            Показать все
+          </a>
+        </div>
+        <div class="bottom-wrapper">
+          <ul class="bottom-wrapper__list">
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Замер и установка
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Срочный заказ за 30 минут
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Таблички под любой бюджет
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Оптом и в розницу
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Работа с юр. лицами и физ. лицами
+            </li>
+          </ul>
+          <div class="bottom-wrapper__items bottom-wrapper__items--tabl">
+            <button class="bottom-wrapper__btn modal-btn _modal-open" type="submit" data-modal-open="modal-4">
+              ЗАКАЗАТЬ
+            </button>
+            <div class="_modal" data-modal="modal-4">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      Заказать
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                      </label>
+                      <textarea class="modal-call__textarea" placeholder="Что вы хотите заказать?"></textarea>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        Заказать
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="price-tabs product-tabs price" style="background-image: url('images/engraving-bg.jpg')">
+      <div class="container">
+        <h2 class="title">
+          стоимость
+        </h2>
+        <div class="price-tabs__top price-tabs__top--price">
+          <a class="price-tabs__top-item price-tabs__top-item--active" href="#tab-6">
+            Из пластика
+          </a>
+          <a class="price-tabs__top-item" href="#tab-7">
+            Из алюминия
+          </a>
+          <a class="price-tabs__top-item" href="#tab-8">
+            из латуни
+          </a>
+          <a class="price-tabs__top-item" href="#tab-9">
+            из нержавейки
+          </a>
+          <a class="price-tabs__top-item" href="#tab-10">
+            из оргстекла
+          </a>
+          <a class="price-tabs__top-item" href="#tab-11">
+            из пвх
+          </a>
+          <a class="price-tabs__top-item" href="#tab-12">
+            из дерева
+          </a>
+        </div>
+        <div class="price-tabs__content">
+          <div class="price-tabs__content-item price-tabs__content-item--active" id="tab-6">
+            <div class="price__wrapper">
+              <div class="price__box-img">
+                <a class="price__img-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                  <img class="price__img-big" src="images/content/big-gallery.jpg" alt="picture 1">
+                </a>
+                <div class="price__gallery">
+                  <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                    <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                    <p class="price__text-link price__text-link--none">
+                      гравировка на пробеле
+                    </p>
+                  </a>
+                  <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                    <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                    <p class="price__text-link price__text-link--none">
+                      гравировка на пробеле
+                    </p>
+                  </a>
+                  <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                    <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                    <p class="price__text-link price__text-link--none">
+                      гравировка на пробеле
+                    </p>
+                  </a>
+                  <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                    <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                    <p class="price__text-link price__text-link--none">
+                      гравировка на пробеле
+                    </p>
+                  </a>
+                  <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                    <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                    <p class="price__text-link price__text-link--none">
+                      гравировка на пробеле
+                    </p>
+                  </a>
+                  <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                    <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                    <p class="price__text-link price__text-link--none">
+                      гравировка на пробеле
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="price__content">
+                <div class="price__top">
+                  <div class="price__sale">
+                    Скидка
+                  </div>
+                  <ul class="price__list">
+                    <h5 class="price__title">
+                      Мы снизили цену на <span>10%</span>
+                    </h5>
+                    <li class="price__item">
+                      На гравировку Macbook
+                    </li>
+                    <li class="price__item">
+                      На гравировку Xiaomi
+                    </li>
+                  </ul>
+                </div>
+                <h2 class="title title-form title-price">
+                  Из пластика
+                </h2>
+                <div class="price__content">
+                  <div class="price__box">
+                    <div class="price__block">
+                      <div class="price__block-title">
+                        ТОЛЩИНА
+                      </div>
+                      <div class="price__block-title">
+                        150х200 мм
+                      </div>
+                      <div class="price__block-title">
+                        200х400 мм
+                      </div>
+                      <div class="price__block-title">
+                        300х400 мм
+                      </div>
+                    </div>
+                    <ul class="price__list-items">
+                      <li class="price__list-item price__list-item--tabs">
+                        <p class="price__list-text">
+                          1,2 мм
+                        </p>
+                        <p class="price__list-text">
+                          1500 грн.
+                        </p>
+                        <p class="price__list-text">
+                          1500 грн.
+                        </p>
+                        <p class="price__list-text">
+                          800 грн.
+                        </p>
+                      </li>
+                      <li class="price__list-item price__list-item--tabs">
+                        <p class="price__list-text">
+                          1,2 мм
+                        </p>
+                        <p class="price__list-text">
+                          1500 грн.
+                        </p>
+                        <p class="price__list-text">
+                          1500 грн.
+                        </p>
+                        <p class="price__list-text">
+                          800 грн.
+                        </p>
+                      </li>
+                      <li class="price__list-item price__list-item--tabs">
+                        <p class="price__list-text">
+                          1,2 мм
+                        </p>
+                        <p class="price__list-text">
+                          1500 грн.
+                        </p>
+                        <p class="price__list-text">
+                          1500 грн.
+                        </p>
+                        <p class="price__list-text">
+                          800 грн.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="price__btn modal-btn _modal-open" type="submit" data-modal-open="modal-17">
+                    у меня другой размер
+                  </button>
+                  <div class="_modal" data-modal="modal-17">
+                    <div class="modal-bg">
+                      <div class="modal-body">
+                        <div class="modal-close">
+                          <img src="images/svg/close.svg" alt="close">
+                        </div>
+                        <div class="modal-content modal-call">
+                          <h2 class="title title-form modal-call__title">
+                            у меня другой размер
+                          </h2>
+                          <form class="modal-call__form" action="#">
+                            <label class="modal-call__label" for="#">
+                              <input class="modal-call__input" type="text" placeholder="Имя">
+                            </label>
+                            <label class="modal-call__label" for="#">
+                              <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                            </label>
+                            <label class="modal-call__label" for="#">
+                              <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                            </label>
+                            <label class="modal-call__label" for="#">
+                              <input class="modal-call__input" type="text" placeholder="Размер*">
+                            </label>
+                            <textarea class="modal-call__textarea" placeholder="Комментарий"></textarea>
+                            <label class="modal-call__label-checkbox" for="#">
+                              <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                              <p class="modal-call__text">
+                                Нажимая на кнопку Отправить, Вы соглашаетесь с
+                                <a class="modal-call__link" href="#">
+                                  правилами обработки персональных данных
+                                </a>
+                              </p>
+                            </label>
+                            <button class="modal-call__btn">
+                              отправить заявку
+                            </button>
+                            <span class="modal-call__span">*Поля обязательные для заполения</span>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="price__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed
+                    tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed tortor nulla
+                    pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price-tabs__content-item" id="tab-7">
+            Content-2
+          </div>
+          <div class="price-tabs__content-item" id="tab-8">
+            Content-3
+          </div>
+          <div class="price-tabs__content-item" id="tab-9">
+            Content-4
+          </div>
+          <div class="price-tabs__content-item" id="tab-10">
+            Content-5
+          </div>
+          <div class="price-tabs__content-item" id="tab-11">
+            Content-6
+          </div>
+          <div class="price-tabs__content-item" id="tab-12">
+            Content-7
+          </div>
+        </div>
+        <div class="bottom-link">
+          <button class="bottom-link__link bottom-link__btn modal-btn _modal-open" type="submit" data-modal-open="modal-29">
+            У МЕНЯ ОПТОВЫЙ ЗАКАЗ
+          </button>
+          <div class="_modal" data-modal="modal-29">
+            <div class="modal-bg">
+              <div class="modal-body">
+                <div class="modal-close">
+                  <img src="images/svg/close.svg" alt="close">
+                </div>
+                <div class="modal-content modal-call">
+                  <h2 class="title title-form modal-call__title">
+                    ОПТОВЫЙ ЗАКАЗ
+                  </h2>
+                  <form class="modal-call__form" action="#">
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="text" placeholder="Имя">
+                    </label>
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                    </label>
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                    </label>
+                    <textarea class="modal-call__textarea" placeholder="Что вы хотите заказать?"></textarea>
+                    <label class="modal-call__label-checkbox" for="#">
+                      <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                      <p class="modal-call__text">
+                        Нажимая на кнопку Отправить, Вы соглашаетесь с
+                        <a class="modal-call__link" href="#">
+                          правилами обработки персональных данных
+                        </a>
+                      </p>
+                    </label>
+                    <button class="modal-call__btn">
+                      отправить заявку
+                    </button>
+                    <span class="modal-call__span">*Поля обязательные для заполения</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-wrapper">
+          <ul class="bottom-wrapper__list">
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Процесс лазерной гравировки происходит при вас
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Гравировка клавиатуры с покраской занимает 30-40 минут
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Гравировка клавиатуры с подстветкой занимает 5 минут
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Заводское качество гравировки
+            </li>
+          </ul>
+          <div class="bottom-wrapper__items bottom-wrapper__items--keyboard">
+            <button class="bottom-wrapper__btn modal-btn _modal-open" type="submit" data-modal-open="modal-19">
+              у меня возникли вопросы
+            </button>
+            <div class="_modal" data-modal="modal-19">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      возникли вопросы
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                      </label>
+                      <textarea class="modal-call__textarea" placeholder="Что вы хотите узнать?"></textarea>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        отправить заявку
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-tabs__bottom">
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Золото матовый
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Золото глянец
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Золото сатин
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Серебро матовый
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Серебро глянец
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Серебро сатин
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Белый
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Черный
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-tabs price-tabs price">
+      <div class="container">
+        <h2 class="title">
+          стоимость
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            стоимость наших услуг
+          </a>
+        </h3>
+        <div class="price__wrapper">
+          <div class="price__box-img">
+            <a class="price__img-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+              <img class="price__img-big" src="images/content/big-gallery.jpg" alt="picture 1">
+            </a>
+            <div class="price__gallery">
+              <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                <p class="price__text-link price__text-link--none">
+                  гравировка на пробеле
+                </p>
+              </a>
+              <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                <p class="price__text-link price__text-link--none">
+                  гравировка на пробеле
+                </p>
+              </a>
+              <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                <p class="price__text-link price__text-link--none">
+                  гравировка на пробеле
+                </p>
+              </a>
+              <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                <p class="price__text-link price__text-link--none">
+                  гравировка на пробеле
+                </p>
+              </a>
+              <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                <p class="price__text-link price__text-link--none">
+                  гравировка на пробеле
+                </p>
+              </a>
+              <a class="price__images-link" href="images/content/big-gallery.jpg" data-fancybox="gallery">
+                <img class="price__images" src="images/content/keyboard-img.jpg" alt="picture 2">
+                <p class="price__text-link price__text-link--none">
+                  гравировка на пробеле
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="price__content">
+            <div class="price__top">
+              <div class="price__sale">
+                Скидка
+              </div>
+              <ul class="price__list">
+                <h5 class="price__title">
+                  Мы снизили цену на <span>10%</span>
+                </h5>
+                <li class="price__item">
+                  На гравировку Macbook
+                </li>
+                <li class="price__item">
+                  На гравировку Xiaomi
+                </li>
+              </ul>
+            </div>
+            <h2 class="title title-form title-price">
+              Из пластика
+            </h2>
+            <div class="price__content">
+              <div class="price__box">
+                <div class="price__block">
+                  <div class="price__block-title">
+                    ТОЛЩИНА
+                  </div>
+                  <div class="price__block-title">
+                    150х200 мм
+                  </div>
+                  <div class="price__block-title">
+                    200х400 мм
+                  </div>
+                  <div class="price__block-title">
+                    300х400 мм
+                  </div>
+                </div>
+                <ul class="price__list-items">
+                  <li class="price__list-item price__list-item--tabs">
+                    <p class="price__list-text">
+                      1,2 мм
+                    </p>
+                    <p class="price__list-text">
+                      1500 грн.
+                    </p>
+                    <p class="price__list-text">
+                      1500 грн.
+                    </p>
+                    <p class="price__list-text">
+                      800 грн.
+                    </p>
+                  </li>
+                  <li class="price__list-item price__list-item--tabs">
+                    <p class="price__list-text">
+                      1,2 мм
+                    </p>
+                    <p class="price__list-text">
+                      1500 грн.
+                    </p>
+                    <p class="price__list-text">
+                      1500 грн.
+                    </p>
+                    <p class="price__list-text">
+                      800 грн.
+                    </p>
+                  </li>
+                  <li class="price__list-item price__list-item--tabs">
+                    <p class="price__list-text">
+                      1,2 мм
+                    </p>
+                    <p class="price__list-text">
+                      1500 грн.
+                    </p>
+                    <p class="price__list-text">
+                      1500 грн.
+                    </p>
+                    <p class="price__list-text">
+                      800 грн.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <button class="price__btn modal-btn _modal-open" type="submit" data-modal-open="modal-23">
+                у меня другой размер
+              </button>
+              <div class="_modal" data-modal="modal-23">
+                <div class="modal-bg">
+                  <div class="modal-body">
+                    <div class="modal-close">
+                      <img src="images/svg/close.svg" alt="close">
+                    </div>
+                    <div class="modal-content modal-call">
+                      <h2 class="title title-form modal-call__title">
+                        у меня другой размер
+                      </h2>
+                      <form class="modal-call__form" action="#">
+                        <label class="modal-call__label" for="#">
+                          <input class="modal-call__input" type="text" placeholder="Имя">
+                        </label>
+                        <label class="modal-call__label" for="#">
+                          <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                        </label>
+                        <label class="modal-call__label" for="#">
+                          <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                        </label>
+                        <label class="modal-call__label" for="#">
+                          <input class="modal-call__input" type="text" placeholder="Размер*">
+                        </label>
+                        <textarea class="modal-call__textarea" placeholder="Комментарий"></textarea>
+                        <label class="modal-call__label-checkbox" for="#">
+                          <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                          <p class="modal-call__text">
+                            Нажимая на кнопку Отправить, Вы соглашаетесь с
+                            <a class="modal-call__link" href="#">
+                              правилами обработки персональных данных
+                            </a>
+                          </p>
+                        </label>
+                        <button class="modal-call__btn">
+                          отправить заявку
+                        </button>
+                        <span class="modal-call__span">*Поля обязательные для заполения</span>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="price__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta
+                fringilla sed
+                tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Lorem
+                ipsum
+                dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed
+                tortor nulla
+                pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-link">
+          <button class="bottom-link__link bottom-link__btn modal-btn _modal-open" type="submit" data-modal-open="modal-30">
+            У МЕНЯ ОПТОВЫЙ ЗАКАЗ
+          </button>
+          <div class="_modal" data-modal="modal-30">
+            <div class="modal-bg">
+              <div class="modal-body">
+                <div class="modal-close">
+                  <img src="images/svg/close.svg" alt="close">
+                </div>
+                <div class="modal-content modal-call">
+                  <h2 class="title title-form modal-call__title">
+                    ОПТОВЫЙ ЗАКАЗ
+                  </h2>
+                  <form class="modal-call__form" action="#">
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="text" placeholder="Имя">
+                    </label>
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                    </label>
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                    </label>
+                    <textarea class="modal-call__textarea" placeholder="Что вы хотите заказать?"></textarea>
+                    <label class="modal-call__label-checkbox" for="#">
+                      <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                      <p class="modal-call__text">
+                        Нажимая на кнопку Отправить, Вы соглашаетесь с
+                        <a class="modal-call__link" href="#">
+                          правилами обработки персональных данных
+                        </a>
+                      </p>
+                    </label>
+                    <button class="modal-call__btn">
+                      отправить заявку
+                    </button>
+                    <span class="modal-call__span">*Поля обязательные для заполения</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-wrapper">
+          <ul class="bottom-wrapper__list">
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Процесс лазерной гравировки происходит при вас
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Гравировка клавиатуры с покраской занимает 30-40 минут
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Гравировка клавиатуры с подстветкой занимает 5 минут
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--keyboard">
+              Заводское качество гравировки
+            </li>
+          </ul>
+          <div class="bottom-wrapper__items bottom-wrapper__items--keyboard">
+            <button class="bottom-wrapper__btn modal-btn _modal-open" type="submit" data-modal-open="modal-20">
+              у меня возникли вопросы
+            </button>
+            <div class="_modal" data-modal="modal-20">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      возникли вопросы
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                      </label>
+                      <textarea class="modal-call__textarea" placeholder="Что вы хотите узнать?"></textarea>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        отправить заявку
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="price-tabs__bottom">
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Золото матовый
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Золото глянец
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Золото сатин
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Серебро матовый
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Серебро глянец
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Серебро сатин
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Белый
+              </p>
+            </div>
+          </div>
+          <div class="price-tabs__bottom-item">
+            <div class="price-tabs__bottom-items">
+              <img src="images/content/item-bg.jpg" alt="bg">
+              <p class="price-tabs__bottom-text">
+                Черный
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="plate-templates" style="background-image: url('images/engraving-bg.jpg')">
+      <div class="container">
+        <h2 class="title">
+          шаблоны табличек
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            Выберите нужный раздел
+          </a>
+        </h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta fringilla sed
+          tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque. Commodo
+          volutpat sollicitudin eu Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna
+          nunc.
+          Et, porta fringilla sed tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient
+          pellentesque. Commodo volutpat sollicitudin eu
+        </p>
+        <div class="slider">
+          <div class="slider__items">
+            <div class="content-images content-plate-templates">
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>   
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-plate-templates">
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-plate-templates">
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-plate-templates">
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-6.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-1.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-2.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-3.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-4.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+              <div class="content-images__item content-plate-templates__item">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-plate-templates__img" src="images/content/tabl-5.jpg" alt="гравировка">
+                </a>
+                <div class="content-plate-templates__box content-plate-templates__box--none">
+                  <p class="content-plate-templates__text">
+                    Размеры
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Цвет
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                  <p class="content-plate-templates__text">
+                    Материал
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-link">
+          <a class="bottom-link__link bottom-link__link--reviews" href="#">
+            Показать все
+          </a>
+        </div>
+        <div class="bottom-wrapper">
+          <ul class="bottom-wrapper__list">
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Замер и установка
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Срочный заказ за 30 минут
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Таблички под любой бюджет
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Оптом и в розницу
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--tabl">
+              Работа с юр. лицами и физ. лицами
+            </li>
+          </ul>
+          <div class="bottom-wrapper__items bottom-wrapper__items--tabl">
+            <button class="bottom-wrapper__btn modal-btn _modal-open" type="submit" data-modal-open="modal-25">
+              ЗАКАЗАТЬ
+            </button>
+            <div class="_modal" data-modal="modal-25">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      Заказать
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                      </label>
+                      <textarea class="modal-call__textarea" placeholder="Что вы хотите заказать?"></textarea>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        Заказать
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="work work-keyboard">
+      <div class="container">
+        <h2 class="title">
+          наши работы
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            примеры работ
+          </a>
+        </h3>
+        <div class="work__top">
+          <div class="work__images">
+            <a class="work__images-link" href="#">
+              <img src="images/work-big.jpg" alt="images">
+            </a>
+          </div>
+          <div class="work__content">
+            <h3 class="special-title title-material">
+              мы поможем сделать любую вещь
+              <sapn class="special-title__span">
+                особенной
+              </sapn>
+            </h3>
+            <p class="work__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
+              magna
+              fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel
+            </p>
+            <div class="work__img-box">
+              <img src="images/content/content-work-1.jpg" alt="images">
+              <img src="images/content/content-work-2.jpg" alt="images">
+              <img src="images/content/content-work-3.jpg" alt="images">
+            </div>
+          </div>
+        </div>
+        <div class="slider slider-work">
+          <div class="slider__items slider-work__items">
+            <div class="content-images content-images--work">
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-4.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-5.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-6.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-4.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-5.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-6.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-4.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--work">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img content-images__img--work" src="images/content/content-work-5.jpg"
+                    alt="гравировка">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-link">
+          <a class="bottom-link__link bottom-link__link--work" href="#">
+            перейти на страницу
+          </a>
+        </div>
+      </div>
+      <div class="sale" style="background-image: url('images/form-bg.png');">
+        <div class="container">
+          <div class="sale__item sale__item--keyboard">
+            <h5 class="sale__title sale__title--keyboard">
+              Скидка 10%
+            </h5>
+            <p class="sale__text">
+              при покупке наших товаров
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="product-tabs" style="background-image: url('images/engraving-bg.jpg')">
+      <div class="container">
+        <h2 class="title">
+          товары
+        </h2>
+        <div class="product-tabs__top">
+          <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">
+            ZIPPo silver
+          </a>
+          <a class="product-tabs__top-item" href="#tab-2">
+            ZIPPo gold
+          </a>
+          <a class="product-tabs__top-item" href="#tab-3">
+            ZIPPo black
+          </a>
+          <a class="product-tabs__top-item" href="#tab-4">
+            ZIPPo pink
+          </a>
+          <a class="product-tabs__top-item" href="#tab-5">
+            ZIPPo violet
+          </a>
+        </div>
+        <div class="product-tabs__content">
+          <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-1">
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis porta turpis magna nunc. Et, porta
+              fringilla sed
+              tortor nulla pretium ultrices. Purus risus neque, risus tristique enim, mattis et parturient pellentesque.
+              Commodo
+              volutpat sollicitudin eu
+            </p>
+            <a class="product-tabs__link" href="#">
+              Читать далее
+            </a>
+            <div class="slider">
+              <div class="slider__items">
+                <div class="content-images product-tabs__slider">
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Зажигалкa
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-6.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        бокал
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-10.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ручка
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-7.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        термокружки
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-8.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Браслеты
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-9.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ежедневники
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__items">
+                <div class="content-images product-tabs__slider">
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Зажигалкa
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-6.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        бокал
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-10.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ручка
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-7.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        термокружки
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-8.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Браслеты
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-9.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ежедневники
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__items">
+                <div class="content-images product-tabs__slider">
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Зажигалкa
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-6.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        бокал
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-10.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ручка
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-7.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        термокружки
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-8.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Браслеты
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-9.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ежедневники
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__items">
+                <div class="content-images product-tabs__slider">
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Зажигалкa
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-6.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        бокал
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-10.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ручка
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-7.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        термокружки
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-8.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        Браслеты
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__price">
+                          1000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                  <div class="content-images__item product-tabs__item">
+                    <div class="product-tabs__promotion">
+                      АКЦИЯ
+                    </div>
+                    <a class="content-images__link" href="#">
+                      <img class="content-images__img product-tabs__img" src="images/content/product-9.jpg"
+                        alt="гравировка">
+                    </a>
+                    <div class="product-tabs__box">
+                      <h5 class="product-tabs__box-title">
+                        ежедневники
+                      </h5>
+                      <p class="product-tabs__text">
+                        Артикул 123123
+                      </p>
+                      <p class="product-tabs__text">
+                        Бренд Zippo
+                      </p>
+                      <p class="product-tabs__text">
+                        Размеры 30х50х10 мм
+                      </p>
+                      <div class="product-tabs__box-price">
+                        <span class="product-tabs__old-price">
+                          1000
+                        </span>
+                        <span class="product-tabs__new-price">
+                          2000 грн.
+                        </span>
+                      </div>
+                    </div>
+                    <div class="product-tabs__block product-tabs__block-btn">
+                      <button class="product-tabs__btn">
+                        В корзину
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-tabs__content-item" id="tab-2">
+            Content-2
+          </div>
+          <div class="product-tabs__content-item" id="tab-3">
+            Content-3
+          </div>
+          <div class="product-tabs__content-item" id="tab-4">
+            Content-4
+          </div>
+          <div class="product-tabs__content-item" id="tab-5">
+            Content-5
+          </div>
+        </div>
+        <div class="bottom-link">
+          <a class="bottom-link__link" href="#">
+            перейти на страницу
+          </a>
+        </div>
+        <div class="bottom-wrapper">
+          <ul class="bottom-wrapper__list">
+            <li class="bottom-wrapper__item bottom-wrapper__item--product">
+              Гравируем и на вашем и на нашем товаре
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--product">
+              При покупке наших товаров дополнительная скидка на гравировку
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--product">
+              Есть доставка
+            </li>
+          </ul>
+          <div class="bottom-wrapper__items bottom-wrapper__items--product">
+            <button class="bottom-wrapper__btn modal-btn _modal-open" type="submit" data-modal-open="modal-24">
+              У МЕНЯ ОПТОВЫЙ ЗАКАЗ
+            </button>
+            <div class="_modal" data-modal="modal-24">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      ОПТОВЫЙ ЗАКАЗ
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                      </label>
+                      <textarea class="modal-call__textarea" placeholder="Что вы хотите заказать?"></textarea>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        отправить заявку
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sale" style="background-image: url('images/form-bg.png');">
+        <div class="container">
+          <div class="sale__inner sale__inner--tabl">
+            <div class="sale__item sale__item--tabl">
+              <p class="sale__text sale__text--product">
+                Не нашли, что искали?
+              </p>
+            </div>
+            <div class="sale__item">
+              <form class="sale__form" action="#">
+                <label class="sale__label">
+                  <input class="sale__input sale__input--product" type="tel" placeholder="Ваш номер телефона" required>
+                </label>
+                <button class="sale__btn" type="submit">
+                  позвоните мне
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container">
+        <h2 class="title">
+          ВИДЕО
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            посмотрите, как мы работаем
+          </a>
+        </h3>
+        <div class="video__inner">
+          <div class="video__popup" style="background-image: url('images/video/video-big.jpg');">
+            <a class="video__play" data-fancybox href="https://www.youtube.com/watch?v=Jj7ie899Q0s">
+              <img class="video__img" src="images/svg/play-btn.svg" alt="video play button">
+            </a>
+          </div>
+          <div class="video-slider">
+            <h3 class="special-title">
+              мы поможем сделать любую вещь
+              <sapn class="special-title__span">
+                особенной
+              </sapn>
+            </h3>
+            <div class="video-slider__item">
+              <div class="video-slider__items">
+                <a class="video-slider__play" data-fancybox href="https://www.youtube.com/watch?v=Jj7ie899Q0s">
+                  <img src="images/video/video-1.jpg" alt="" class="video-slider__img">
+                  <img class="video-slider__btn" src="images/svg/play-btn.svg" alt="video play button">
+                </a>
+              </div>
+              <div class="video-slider__items">
+                <a class="video-slider__play" data-fancybox href="https://www.youtube.com/watch?v=Jj7ie899Q0s">
+                  <img src="images/video/video-2.jpg" alt="" class="video-slider__img">
+                  <img class="video-slider__btn" src="images/svg/play-btn.svg" alt="video play button">
+                </a>
+              </div>
+              <div class="video-slider__items">
+                <a class="video-slider__play" data-fancybox href="https://www.youtube.com/watch?v=Jj7ie899Q0s">
+                  <img src="images/video/video-1.jpg" alt="" class="video-slider__img">
+                  <img class="video-slider__btn" src="images/svg/play-btn.svg" alt="video play button">
+                </a>
+              </div>
+              <div class="video-slider__items">
+                <a class="video-slider__play" data-fancybox href="https://www.youtube.com/watch?v=Jj7ie899Q0s">
+                  <img src="images/video/video-1.jpg" alt="" class="video-slider__img">
+                  <img class="video-slider__btn" src="images/svg/play-btn.svg" alt="video play button">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" style="background-image: url('images/engraving-bg.jpg')">
+      <div class="container">
+        <h2 class="title">
+          дополнительные услуги
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            дополнительные услуги
+          </a>
+        </h3>
+        <div class="services__wrapper">
+          <div class="services__content">
+            <div class="services__title-box">
+              <h5 class="services__title">
+                Наименование
+              </h5>
+              <p class="services__subtitle">
+                стоимость
+              </p>
+            </div>
+            <ul class="services__list">
+              <li class="services__item">
+                <p class="services__text">
+                  Доп. языки
+                </p>
+                <span class="services__price">
+                  от 800 грн.
+                </span>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  Гравировка на пробеле (лого/текст)
+                </p>
+                <span class="services__price">
+                  от 1200 грн.
+                </span>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  Нанесение изображения на корпус
+                </p>
+                <span class="services__price">
+                  от 800 грн.
+                </span>
+              </li>
+              <li class="services__item">
+                <p class="services__text">
+                  Чистка клавиатуры от наклеек
+                </p>
+                <span class="services__price">
+                  от 1200 грн.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="services__box">
+            <div class="services__box-img">
+              <img class="services__images" src="images/content/keyboard-img.jpg" alt="keyboard-img">
+            </div>
+            <div class="services__box-img">
+              <img class="services__images" src="images/content/keyboard-img.jpg" alt="keyboard-img">
+            </div>
+            <div class="services__box-img">
+              <img class="services__images" src="images/content/keyboard-img.jpg" alt="keyboard-img">
+            </div>
+            <div class="services__box-img">
+              <img class="services__images" src="images/content/keyboard-img.jpg" alt="keyboard-img">
+            </div>
+            <div class="services__box-img">
+              <img class="services__images" src="images/content/keyboard-img.jpg" alt="keyboard-img">
+            </div>
+            <div class="services__box-img">
+              <img class="services__images" src="images/content/keyboard-img.jpg" alt="keyboard-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seal">
+      <div class="container">
+        <h2 class="title">
+          место для гравировки
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            места для гравировки
+          </a>
+        </h3>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non egestas sed elementum tristique. At augue pharetra,
+          nulla
+          risus. Augue tellus est, elit faucibus venenatis tempor mauris. Semper enim morbi mauris elit, morbi nec.
+          Tincidunt at
+          pellentesque non lobortis proin convallis.
+        </p>
+        <div class="seal__items">
+          <div class="seal__item"></div>
+          <div class="seal__item"></div>
+          <div class="seal__item"></div>
+        </div>
+        <div class="bottom-wrapper">
+          <ul class="bottom-wrapper__list">
+            <li class="bottom-wrapper__item bottom-wrapper__item--seal">
+              Гравируем и на вашем и на нашем товаре
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--seal">
+              При покупке наших товаров дополнительная скидка на гравировку
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--seal">
+              Есть доставка
+            </li>
+            <li class="bottom-wrapper__item bottom-wrapper__item--seal">
+              Есть доставка
+            </li>
+          </ul>
+          <div class="bottom-wrapper__items">
+            <button class="bottom-wrapper__btn modal-btn _modal-open" type="submit" data-modal-open="modal-8">
+              хочу заказать
+            </button>
+            <div class="_modal" data-modal="modal-8">
+              <div class="modal-bg">
+                <div class="modal-body">
+                  <div class="modal-close">
+                    <img src="images/svg/close.svg" alt="close">
+                  </div>
+                  <div class="modal-content modal-call">
+                    <h2 class="title title-form modal-call__title">
+                      Заказать
+                    </h2>
+                    <form class="modal-call__form" action="#">
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="text" placeholder="Имя">
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                      </label>
+                      <label class="modal-call__label" for="#">
+                        <input class="modal-call__input" type="email" placeholder="E-mail*" required>
+                      </label>
+                      <textarea class="modal-call__textarea" placeholder="Что вы хотите заказать?"></textarea>
+                      <label class="modal-call__label-checkbox" for="#">
+                        <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                        <p class="modal-call__text">
+                          Нажимая на кнопку Отправить, Вы соглашаетесь с
+                          <a class="modal-call__link" href="#">
+                            правилами обработки персональных данных
+                          </a>
+                        </p>
+                      </label>
+                      <button class="modal-call__btn">
+                        Заказать
+                      </button>
+                      <span class="modal-call__span">*Поля обязательные для заполения</span>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="collapsing collapsing-keyboard">
+      <div class="container">
+        <h2 class="title">
+          гравировка
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            Выберите нужный раздел
+          </a>
+        </h3>
+    
+        <div class="collapsing-box">
+          <div class="collapse">
+            <button class="js-collapse-btn">Гравировка на металле</button>
+            <ul class="js-collapse-box">
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на кольцах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на часах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на ножах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на жетонах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на адреснике
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на ручках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на зажигалках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на кружках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на флягах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на ложках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на браслетах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на телефонах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на флешках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на кубках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на медалях
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на самоварах
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse">
+            <button class="js-collapse-btn">Гравировка на стекле</button>
+            <ul class="js-collapse-box">
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на бокалах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на бутылках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на вазах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на наградах
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse">
+            <button class="js-collapse-btn">Гравировка на коже</button>
+            <ul class="js-collapse-box">
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на ежедневниках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на портмоне
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на ремне
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на браслетах
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse">
+            <button class="js-collapse-btn">Гравировка на дереве</button>
+            <ul class="js-collapse-box">
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на часах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на гитарах
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на барабанных <br>палочках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на шкатулках
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на хэштегах
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse">
+            <button class="js-collapse-btn">Гравировка на клавиатуре</button>
+            <ul class="js-collapse-box">
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на стационарной <br>клавиатуре
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Гравировка на клавиатуре <br>ноутбука:
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Macbook
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Macbook Pro
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Macbook Air
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Xiaomi
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Chuwi
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Lenovo
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  Deli
+                </a>
+              </li>
+              <li class="js-collapse-item">
+                <a class="js-collapse-link" href="#">
+                  HP
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews reviews-tabs">
+      <div class="container">
+        <h2 class="title">
+          ОТЗЫВЫ
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            отзывы наших клиентов
+          </a>
+        </h3>
+        <div class="slider">
+          <div class="slider__items">
+            <div class="content-images content-reviews">
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Иван Г.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Отлично, всё сделали. Предупредили, что гравированные буквы не будут просвечиваться, так как пластик на
+                    клавишах, на
+                    моей клавиатуре толстый...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Сергей С.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Пришел по совету друга. Всем понравилась. Мастер пунктуальный. Все объяснил и помог определится с
+                    выбором. Советую всем.
+                    Цены по-моему самые адекватные.
+                  </p>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Александра М.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Очень понравилось как сделали гравировку, быстро и качественно!
+                    Я очень переживала, так как ручка очень дорогая и боялась, что ее просто...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-reviews">
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Иван Г.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Отлично, всё сделали. Предупредили, что гравированные буквы не будут просвечиваться, так как пластик на
+                    клавишах, на
+                    моей клавиатуре толстый...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Сергей С.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Пришел по совету друга. Всем понравилась. Мастер пунктуальный. Все объяснил и помог определится с
+                    выбором.
+                    Советую всем.
+                    Цены по-моему самые адекватные.
+                  </p>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Александра М.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Очень понравилось как сделали гравировку, быстро и качественно!
+                    Я очень переживала, так как ручка очень дорогая и боялась, что ее просто...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-reviews">
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Иван Г.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Отлично, всё сделали. Предупредили, что гравированные буквы не будут просвечиваться, так как пластик на
+                    клавишах, на
+                    моей клавиатуре толстый...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Сергей С.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Пришел по совету друга. Всем понравилась. Мастер пунктуальный. Все объяснил и помог определится с
+                    выбором.
+                    Советую всем.
+                    Цены по-моему самые адекватные.
+                  </p>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Александра М.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Очень понравилось как сделали гравировку, быстро и качественно!
+                    Я очень переживала, так как ручка очень дорогая и боялась, что ее просто...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-reviews">
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Иван Г.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Отлично, всё сделали. Предупредили, что гравированные буквы не будут просвечиваться, так как пластик на
+                    клавишах, на
+                    моей клавиатуре толстый...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Сергей С.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Пришел по совету друга. Всем понравилась. Мастер пунктуальный. Все объяснил и помог определится с
+                    выбором.
+                    Советую всем.
+                    Цены по-моему самые адекватные.
+                  </p>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+              <div class="content-images__item content-images__item--reviews">
+                <div class="content-images__photo">
+                  <img src="images/avatar/avatar-1.jpg" alt="avatar">
+                </div>
+                <div class="content-images__inner">
+                  <h5 class="content-images__title">
+                    Александра М.
+                  </h5>
+                  <p class="content-images__reviews">
+                    Очень понравилось как сделали гравировку, быстро и качественно!
+                    Я очень переживала, так как ручка очень дорогая и боялась, что ее просто...
+                  </p>
+                  <a class="content-images__link-text" href="#">
+                    Читать далее
+                  </a>
+                  <span class="content-images__date">
+                    23.11.2020
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-link">
+          <a class="bottom-link__link bottom-link__link--reviews" href="#">
+            оставить отзыв
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="clients clients-tabs" style="background-image: url('images/engraving-bg.jpg')">
+      <div class="container">
+        <h2 class="title">
+          нам доверяют
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            клиенты, с которыми мы работаем
+          </a>
+        </h3>
+        <div class="slider">
+          <div class="slider__items">
+            <div class="content-images content-images--clients">
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-images--clients">
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-images--clients">
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__items">
+            <div class="content-images content-images--clients">
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-1.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-2.jpg" alt="гравировка">
+                </a>
+              </div>
+              <div class="content-images__item content-images__item--clients">
+                <a class="content-images__link content-images__link--clients" href="#">
+                  <img class="content-images__img" src="images/clients/clients-3.jpg" alt="гравировка">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="description">
+      <div class="container">
+        <h2 class="title">
+          Лазерная гравировка
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            что такое гравировка
+          </a>
+        </h3>
+        <div class="description__item">
+          <img class="description__img" src="images/description/description-1.jpg" alt="images">
+          <p class="description__text description__text--one">
+            Лазерная гравировка - современная технология, которая позволяет наносить детализированное изображение на любой
+            материал.
+            Это может быть стекло, дерево или даже металл - в результате все равно получится изящное изображение, точно
+            соответствующее задумке автора.
+          </p>
+          <p class="description__text">
+            Гравировка в Украине - где заказать
+            Лазерная гравировка выполняется с применением современного оборудования, которое полностью контролируется
+            компьютером.
+            Это и гарантирует высокую точность нанесения изображений, безупречные тонкие линии и установленную глубину
+            выреза,
+            которую
+            можно контролировать по желанию заказчика.
+          </p>
+          <p class="description__text">
+            Вы можете сделать гравировку буквально на любом предмете, который попадётся вам на глаза. От гравировки
+            клавиатуры до
+            таблички на дверь, результат будет безупречным и на 100% соответствовать ожиданиям.
+          </p>
+          <p class="description__text">
+            Наши специалисты и качественное оборудование позволяют не только создавать изящные узоры на предметах. При
+            необходимости
+            вы можете имитировать даже рукописный текст, вплоть до разного уровня нажима, которого мы добиваемся, используя
+            специальные программы для гравировки разного уровня и глубины.
+          </p>
+          <p class="description__text">
+            Среди наших услуг - гравировка на металле, гравировка на стекле, украшение мебели и предметов обихода, вообще
+            все
+            работы
+            связанные с нанесением узора на разные вещи. Неважно, из чего выполнена вещь, мы гарантируем отличный результат
+            работ.
+            Даже если у вас уже был неудачный опыт гравировки, в ряде случаев мы можем исправить чужой брак, отполировав
+            поверхность
+            и нанеся новый рисунок.
+          </p>
+        </div>
+        <h2 class="title">
+          как это работает
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            что такое гравировка
+          </a>
+        </h3>
+        <div class="description__item">
+          <img class="description__img description__img--right" src="images/description/description-3.jpg" alt="images">
+          <p class="description__text">
+            С помощью лазера снимается верхний слой материала, при этом есть возможность делать узоры разной глубины. Все
+            зависит от
+            свойств конкретного выбранного материала.
+          </p>
+          <p class="description__text">
+            У лазерной гравировки есть ряд преимуществ по сравнению с другими методами обработки. Вот только некоторые из
+            них:
+          </p>
+          <p class="description__text">
+            <span>Высокая скорость работ</span>, что комфортно и к тому же снижает итоговую стоимость обработки.
+          </p>
+          <p class="description__text">
+            <b>Никакого физического воздействия</b>, благодаря чему можно обрабатывать даже очень хрупкие материалы.
+          </p>
+          <p class="description__text">
+            <b>Исключены ошибки и брак</b> благодаря полностью автоматизированным процессам.
+          </p>
+          <p class="description__text">
+            Итоговое изображение устойчиво к истиранию даже при активном использовании вещи.
+          </p>
+          <p class="description__text">
+            В основном гравировка делится на промышленную и сувенирную. Каждый вид имеет свои особенности в технике
+            нанесения. Так,
+            сувенирная гравировка обычно используется для того, чтобы украсить личные вещи или сделать оригинальный подарок.
+          </p>
+          <p class="description__text">
+            Промышленная же гравировка преследует другие цели, с её помощью проводят маркировку, оформляют приборный панели,
+            делают
+            номерные знаки и т.д. Разумеется, при оптовых заказах стоимость работ снижается и становится ещё более выгодной
+            для
+            заказчика.
+          </p>
+        </div>
+        <h2 class="title">
+          где используется гравировка
+        </h2>
+        <h3 class="subtitle">
+          <a class="subtitle__link" href="#">
+            что такое гравировка
+          </a>
+        </h3>
+        <div class="description__item">
+          <img class="description__img" src="images/description/description-2.jpg" alt="images">
+          <p class="description__text">
+            Любой предмет, который вы хотели бы украсить гравировкой, может быть обработан.
+          </p>
+          <p class="description__text">
+            Например, один из распространённых методов - это гравировка по дереву. Это номерки для гардероба, таблички,
+            украшенная
+            мебель, двери и т.д. Вообще древесина один из самых интересных материалов для гравировки, ведь итоговый
+            результат во
+            многом зависит от породы дерева, его оттенка и структуры.
+          </p>
+          <p class="description__text">
+            Металлические объекты чаще всего украшают личными надписями и пожеланиями. Это признание в любви на обручальных
+            кольцах,
+            именная гравировка на фляжке, украшение металлических предметов интерьера, столовыхприборов и т.д.
+          </p>
+          <p class="description__text">
+            И, разумеется, гравировкой украшают стекло. От бокалов, которые дарят на свадьбу до украшения стеклянных
+            поверхностей
+            столов или корпусной мебели - гравировка к вашим услугам.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" style="background-image: url('images/footer-bg.png');">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo logo-footer">
+          <a class="logo__link" href="#">
+            <h2 class="logo__title">
+              Q-GRAVER.com
+            </h2>
+            <p class="logo__subtitle">
+              ЦЕНТР ЛАЗЕРНОЙ ГРАВИРОВКИ
+            </p>
+          </a>
+        </div>
+        <form class="form-search form-search__footer" action="#">
+          <input class="form-search__input form-search__input-footer" type="text" placeholder="Введите запрос">
+          <button class="form-search__btn" type="submit">
+            <img src="images/svg/search.svg" alt="search images">
+          </button>
+        </form>
+        <div class="basket">
+          <a class="basket__link" href="#">
+            <img class="basket__img" src="images/svg/basket.svg" alt="корзина">
+          </a>
+        </div>
+      </div>
+      <div class="footer-inner">
+        <div class="footer-inner__button">
+          <button class="footer-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-15">
+            Заказать звонок
+          </button>
+          <div class="_modal" data-modal="modal-15">
+            <div class="modal-bg">
+              <div class="modal-body">
+                <div class="modal-close">
+                  <img src="images/svg/close.svg" alt="close">
+                </div>
+                <div class="modal-content modal-call">
+                  <h2 class="title title-form modal-call__title">
+                    Заказать звонок
+                  </h2>
+                  <form class="modal-call__form" action="#">
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="text" placeholder="Имя">
+                    </label>
+                    <label class="modal-call__label" for="#">
+                      <input class="modal-call__input" type="phone" placeholder="Номер телефона*" required>
+                    </label>
+                    <label class="modal-call__label-checkbox" for="#">
+                      <input class="modal-call__checkbox" type="checkbox" value="yes" required>
+                      <p class="modal-call__text">
+                        Нажимая на кнопку Отправить, Вы соглашаетесь с
+                        <a class="modal-call__link" href="#">
+                          правилами обработки персональных данных
+                        </a>
+                      </p>
+                    </label>
+                    <button class="modal-call__btn">
+                      отправить заявку
+                    </button>
+                    <span class="modal-call__span">*Поля обязательные для заполения</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-inner__nav">
+          <div class="footer-inner__item">
+            <ul class="footer-inner__list">
+              <li class="footer-inner__items">
+                <a class="footer-inner__link" href="#">
+                  О НАС
+                </a>
+              </li>
+              <li class="footer-inner__items">
+                <a class="footer-inner__link" href="#">
+                  ПРИМЕРЫ РАБОТ
+                </a>
+              </li>
+              <li class="footer-inner__items">
+                <a class="footer-inner__link" href="#">
+                  ДОСТАВКА И ОПЛАТА
+                </a>
+              </li>
+              <li class="footer-inner__items">
+                <a class="footer-inner__link" href="#">
+                  ОПТОВИКАМ
+                </a>
+              </li>
+              <li class="footer-inner__items">
+                <a class="footer-inner__link" href="#">
+                  АКЦИИ
+                </a>
+              </li>
+              <li class="footer-inner__items">
+                <a class="footer-inner__link" href="#">
+                  УСЛУГИ И ЦЕНЫ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-inner__item">
+            <h4 class="footer-inner__title">
+              Гравировка
+            </h4>
+            <ul class="footer-catalogue">
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На клавиатуре
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На кольцах
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На бокалах
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На зажигалках
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На ручках
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На дереве
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На стекле
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На коже
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-inner__item">
+            <h4 class="footer-inner__title">
+              Таблички
+            </h4>
+            <ul class="footer-catalogue">
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На дверь
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Офисная
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Фасадная
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На крест
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  На стол
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Шильды
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-inner__item">
+            <h4 class="footer-inner__title">
+              Товары
+            </h4>
+            <ul class="footer-catalogue">
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Зажигалки
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Бокалы
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Ручки
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Термокружки
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Браслеты
+                </a>
+              </li>
+              <li class="footer-catalogue__item">
+                <a class="footer-catalogue__link" href="#">
+                  Ежедневники
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-inner__item">
+            <div class="footer-adress">
+              <p class="footer-adress__text">
+                Адрес:
+              </p>
+              <span>
+                Украина,<br>
+                ул. Бакунинская 14 стр. 11
+              </span>
+            </div>
+            <ul class="footer-adress__list">
+              <li class="footer-adress__item">
+                <a class="footer-adress__link" href="mailto:info@q-graver.com">
+                  info@q-graver.com
+                </a>
+              </li>
+              <li class="footer-adress__item">
+                <a class="footer-adress__link" href="tel:+80956321116">
+                  +8 (095) 632-11-16
+                </a>
+              </li>
+            </ul>
+            <div class="footer-adress__days">
+              <span class="footer-adress__numbers">Пн-Пт: 9.00 - 21.00</span>
+              <span class="footer-adress__numbers">Сб-Вс: 10.00 - 20.00</span>
+            </div>
+            <ul class="social-list social-list__footer">
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img class="social-list__img" src="images/svg/whatsapp.svg" alt="whatsapp">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img class="social-list__img" src="images/svg/telegram.svg" alt="telegram">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-inner__social">
+        <ul class="social-list social-list__footer">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <img class="social-list__img" src="images/svg/instagram.svg" alt="instagram">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.youtube.com/">
+              <img class="social-list__img" src="images/svg/youtube.svg" alt="youtube">
+            </a>
+          </li>
+        </ul>
+      </div>   
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <ul class="footer-bottom__list">
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Карта сайта
+            </a>
+          </li>
+          <li class="footer-bottom__item">
+            <a class="footer-bottom__link" href="#">
+              Политика конфиденциальности
+            </a>
+          </li>
+        </ul>
+        <div class="footer-bottom__copy">
+          <p class="footer-bottom__text">
+            © 2016-2021, Q-Graver
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.min.js"></script>
+</body>
+</html>
