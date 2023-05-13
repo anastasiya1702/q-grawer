@@ -19,6 +19,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+    padding-right: 17px;
   }
 }
 .modal-bg{
@@ -49,6 +50,13 @@
   &__title{
     margin-bottom: 50px;
   }
+  &__subtitle{
+    font-size: 16px;
+    @extend %montserrat-700;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
   &__form{
     display: block;
   }
@@ -57,12 +65,13 @@
     max-width: 420px;
     width: 100%;
     margin-bottom: 30px;
-    background-color: $link;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+    
   }
   &__input,
   &__textarea{
+    background-color: $link;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
     max-width: 420px;
     width: 100%;
     padding: 10px 15px;
@@ -120,6 +129,11 @@
       text-decoration: none;
     }
   }
+  &__btn-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__btn{
     @extend %btn;
     text-transform: uppercase;
@@ -140,6 +154,134 @@
     font-size: 14px;
     line-height: 150%;
     opacity: 0.5;
+  }
+}
+.modal-basket{
+  max-width: 850px;
+  width: 100%;
+  &__wrapper{
+    text-align: center;
+  }
+  &__warpper-box{
+    max-width: 650px;
+    width: 100%;
+  }
+  &__wrapper-text{
+    font-size: 30px;
+    @extend %montserrat-500;
+    line-height: 145%;
+    color: $title;
+    text-align: center;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  &__form{
+    max-width: 750px;
+    width: 100%;
+  }
+  &__label{
+    display: block;
+    margin-bottom: 15px;
+    max-width: 750px;
+    width: 100%;
+  }
+  &__input{
+    background-color: $link;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    max-width: 750px;
+    width: 100%;
+    padding: 7px 10px;
+    margin-top: 5px;
+  }
+  &__box--bottom{
+    margin-bottom: 40px;
+  }
+  &__text{
+    @extend %montserrat-400;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 15px;
+  }
+  &__label--checkbox{
+    display: flex;
+    align-items: center;
+  }
+  &__label--input{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 15px 0;
+    background-color: $link;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border: transparent;
+    outline: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover{
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    }
+  }
+  &__label--text{
+    @extend %montserrat-400;
+    font-size: 16px;
+    line-height: 100%;
+  }
+  &__title{
+    @extend %montserrat-700;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 30px;
+  }
+  &__box-list{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__list{
+    text-align: start;
+  }
+  &__item:not(:last-child){
+    margin-bottom: 15px;
+  }
+  &__link{
+    color: $accent;
+    @extend %montserrat-700;
+    font-size: 20px;
+    line-height: 130%;
+    transition: all .3s;
+    &:hover{
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
+}
+.modal-body-basket{
+  max-width: 1137px;
+  width: 100%;
+  padding: 30px 35px;
+}
+.modal-content-basket{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__title{
+    color: $accent;
+    @extend %montserrat-700;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 15px;
+  }
+  &__link{
+    @extend %montserrat-400;
+    font-size: 16px;
+    line-height: 195%;
+    color: $title;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+      opacity: 0.9;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -166,10 +308,13 @@
     @extend %montserrat-500;
     padding: 11px 13px;
     border-radius: 3px;
-    transition: all .3s;
+    transition: all .3s linear;
     &:hover{
       background-color: $accent;
     }
+  }
+  &__link--active{
+    background-color: $accent;
   }
 }
 .basket{
@@ -289,6 +434,10 @@
   &__footer{
     justify-content: flex-start;
   }
+  &__modal{
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 .header-bottom{
   border-top: 1px solid gray;
@@ -321,6 +470,9 @@
       color: $accent;
     }
   } 
+  &__link--active{
+    color: $accent;
+  }
 }
 .form-search{
   display: flex;
@@ -1129,10 +1281,13 @@
   }
 }
 .slick-prev {
-  left: 15px;
+  left: 0px;
 }
 .slick-next {
-  right: 10px;
+  right: 0px;
+}
+.slick-list{
+  padding: 10px 5px;
 }
 
 .video{
@@ -2686,6 +2841,289 @@
     text-align: center;
   }
 }
+
+.product-filter{
+  padding: 60px 0;
+  background-color: $bg;
+  &__top{
+    margin-bottom: 30px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #cdced6;
+    padding: 10px 50px 10px 40px;
+    margin-bottom: 25px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $accent;
+      width: 150px;
+      height: 3px;
+      bottom: -2px;
+      left: 25px;
+    }
+    &::after {
+      content: url('../images/svg/subtitle-after.svg');
+      position: absolute;
+      bottom: -7px;
+      left: 95px;
+    }
+  }
+  &__title{
+    color: $accent;
+    @extend %montserrat-700;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+  }
+}
+.jq-selectbox__select{
+  padding: 0 30px 0 0;
+  margin-left: 20px;
+  border: 1px solid transparent;
+  outline: transparent;
+  background: transparent;
+  box-shadow: none;
+  @extend %montserrat-400;
+  color: $accent;
+  font-size: 16px;
+  line-height: 130%;
+  text-decoration: underline;
+  text-shadow: none;
+  &:hover {
+    background: transparent;
+  }
+}
+.jq-selectbox__trigger{
+  border: none;
+}
+
+.jq-selectbox__trigger-arrow{
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  width: 12px;
+  height: 7px;
+  border: none;
+  transform: rotate(180deg);
+  background-image: url('../images/svg/list-red.svg');
+  &:active{
+    transform: rotate(0deg);
+  }
+}
+.jq-selectbox ul{
+  background-color: $link;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  &:hover{
+    background-color: $link;
+  }
+}
+.jq-selectbox li{
+  min-height: 18px;
+  padding: 5px 10px 6px 25px;
+  color: $accent;
+  text-decoration: underline;
+  transition: all .3s;
+  &:hover {
+      background-color: $link;
+      color: $accent;
+      text-decoration: none;
+    }
+}
+.jq-selectbox li.selected{
+  background-color: $link;
+  color: $accent;
+}
+.jq-selectbox__dropdown{
+  width: 185px;
+  width: 100%;
+}
+
+.cart{
+  padding: 60px 0;
+  background-color: $bg;
+  &__button{
+    text-align: center;
+  }
+  &__btn{
+    color: $accent;
+    @extend %montserrat-500;
+    line-height: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  &__wrap{
+    display: flex;
+    margin-bottom: 90px;
+  }
+  &__item{
+    background-color: $link;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+  }
+  &__item-result{
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+  }
+  &__item-product{
+    max-width: 740px;
+    width: 100%;
+    margin-right: 30px;
+    box-shadow: none;
+    background-color: $bg;
+  }
+  &__items:not(:last-child){
+    margin-bottom: 30px;
+  }
+  &__items{
+    background-color: $link;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    padding: 11px 15px;
+    display: flex;
+    position: relative;
+    &::before{
+      content: 'x';
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      width: 10px;
+      height: 10px;
+      cursor: pointer;
+    }
+  }
+  &__img{
+    max-width: 138px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+  &__content{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box{
+    margin-right: 30px;
+  }
+  &__name{
+    color: $title;
+    @extend %montserrat-700;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  &__article,
+  &__brand,
+  &__size,
+  &__box-text{
+    color: $title;
+    font-size: 16px;
+    @extend %montserrat-400;
+    line-height: 100%;
+    margin-bottom: 10px;
+  }
+  &__box-form{
+    margin-right: 50px;
+  }
+  &__cost{
+    font-size: 20px;
+    @extend %montserrat-700;
+    line-height: 100%;
+  }
+  &__article-box{
+    padding: 15px 30px;
+  }
+  &__inner{
+    text-align: center;
+  }
+  &__cont{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__article-text{
+    text-align: center;
+    display: inline-block;
+    color: $title;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    @extend %montserrat-400;
+    line-height: 100%;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 3px;
+      background-color: $accent;
+      bottom: 0;
+      left: 50px;
+    }
+  }
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  &__text{
+    color: $title;
+    font-size: 16px;
+    @extend %montserrat-500;
+    line-height: 145%;
+    margin-bottom: 15px;
+    
+    a{
+      color: $accent;
+      text-decoration: underline;
+      font-size: 16px;
+      @extend %montserrat-500;
+      line-height: 145%;
+    }
+  }
+  &__result{
+    border-top: 3px solid #CDCED6;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  &__result-text{
+    font-size: 16px;
+    @extend %montserrat-500;
+    line-height: 100%;
+  }
+  &__result-btn{
+    @extend %btn;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 5px 7px 20px 5px rgba(254, 62, 87, 0.3);
+      background-color: $link;
+      color: $accent;
+      border: 1px solid $accent;
+    }
+  }
+}
+
+
 
 
  

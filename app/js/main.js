@@ -1,5 +1,10 @@
 $(function () {
 
+  $('input[type="checkbox"]').on('change', function () {
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+  });
+  
+
   const modalBtns = document.querySelectorAll('._modal-open');
   const modals = document.querySelectorAll('._modal');
 

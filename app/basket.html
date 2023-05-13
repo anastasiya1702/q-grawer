@@ -13,7 +13,7 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#">
+            <a class="menu__link menu__link--active" href="http://localhost:3000/about.html">
               О нас
             </a>
           </li>
@@ -84,10 +84,10 @@
             <a class="header-inner__link header-inner__link--tel" href="tel:+80956321116">
               +8 (095) 632-11-16
             </a>
-            <button class="header-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-13">
+            <button class="header-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-16">
               Заказать звонок
             </button>
-            <div class="_modal" data-modal="modal-13">
+            <div class="_modal" data-modal="modal-16">
               <div class="modal-bg">
                 <div class="modal-body">
                   <div class="modal-close">
@@ -145,10 +145,10 @@
               </a>
             </li>
             <li class="header-bottom__item">
-              <button class="header-bottom__link modal-btn _modal-open" href="#" data-modal-open="modal-40">
+              <button class="header-bottom__link modal-btn _modal-open" href="#" data-modal-open="modal-38">
                 Гравировка
               </button>
-              <div class="_modal" data-modal="modal-40">
+              <div class="_modal" data-modal="modal-38">
                 <div class="modal-bg">
                   <div class="modal-body modal-body-basket">
                     <div class="modal-content modal-content-basket">
@@ -369,198 +369,504 @@
             </li>
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">
-                О нас
+                Корзина
               </a>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="cart">
       <div class="container">
         <h2 class="title">
-          О нас
+          корзина
+        </h2>
+        <div class="cart__button">
+          <button class="cart__btn">Очистить корзину x</button>
+        </div>
+        <div class="cart__wrap">
+          <div class="cart__item cart__item-product">
+            <div class="cart__items">
+              <img class="cart__img" src="images/content/product-item.jpg" alt="product">
+              <div class="cart__content">
+                <div class="cart__box">
+                  <div class="cart__name">
+                    Зажигалка zippo silver
+                  </div>
+                  <p class="cart__article">
+                    Артикул 123123
+                  </p>
+                  <p class="cart__brand">
+                    Бренд Zippo
+                  </p>
+                  <p class="cart__size">
+                    Размеры 30х50х10 мм
+                  </p>
+                </div>
+                <div class="product-card__box-price-wrapper cart__box-form">
+                  <form class="product-card__box-price-form" action="#">
+                    <input class="product-card__item-num" type="number" value="1" min="1">
+                  </form>
+                </div>
+                <div class="cart__price">
+                  <p class="cart__box-text">
+                    Цена:
+                  </p>
+                  <span class="cart__cost">
+                    2000 грн
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="cart__items">
+              <img class="cart__img" src="images/content/product-item.jpg" alt="product">
+              <div class="cart__content">
+                <div class="cart__box">
+                  <div class="cart__name">
+                    Зажигалка zippo silver
+                  </div>
+                  <p class="cart__article">
+                    Артикул 123123
+                  </p>
+                  <p class="cart__brand">
+                    Бренд Zippo
+                  </p>
+                  <p class="cart__size">
+                    Размеры 30х50х10 мм
+                  </p>
+                </div>
+                <div class="product-card__box-price-wrapper cart__box-form">
+                  <form class="product-card__box-price-form" action="#">
+                    <input class="product-card__item-num" type="number" value="1" min="1">
+                  </form>
+                </div>
+                <div class="cart__price">
+                  <p class="cart__box-text">
+                    Цена:
+                  </p>
+                  <span class="cart__cost">
+                    2000 грн
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__item cart__item-result">
+            <div class="cart__article-box">
+              <div class="cart__inner">
+                <p class="cart__article-text">
+                  Заказ номер 12345
+                </p>
+              </div>
+              <div class="cart__block">
+                <p class="cart__box-text">
+                  2 товара на сумму
+                </p>
+                <span class="cart__cost">
+                  2000 грн
+                </span>
+              </div>
+              <div class="cart__text">
+                Забрать можно <a href="#">на следующий день</a> после оформления заказа или можете заказать <a href="#">доставку</a>
+              </div>
+              <div class="cart__result">
+                <div class="cart__result-text">
+                  ИТОГО:
+                </div>
+                <div class="cart__result-price cart__cost">
+                  2000 грн
+                </div>
+              </div>
+              <div class="cart__cont">
+                <button class="cart__result-btn modal-btn _modal-open" type="submit" data-modal-open="modal-36">
+                  оформить заказ
+                </button>
+                <div class="_modal" data-modal="modal-36">
+                  <div class="modal-bg">
+                    <div class="modal-body modal-basket">
+                      <div class="modal-close">
+                        <img src="images/svg/close.svg" alt="close">
+                      </div>
+                      <div class="modal-content modal-call modal-basket__content">
+                        <h2 class="title title-form modal-call__title">
+                          оформление заказа
+                        </h2>
+                        <h6 class="modal-call__subtitle">
+                          Контактные данные
+                        </h6>
+                        <form class="modal-call__form modal-basket__form" action="#">
+                          <label class="modal-call__label modal-basket__label" for="#">
+                            ФИО
+                            <input class="modal-call__input modal-basket__input" type="text" placeholder="ФИО">
+                          </label>
+                          <label class="modal-call__label modal-basket__label" for="#">
+                            Номер телефона
+                            <input class="modal-call__input modal-basket__input" type="phone" placeholder="8 (888) 888-88-88" required>
+                          </label>
+                          <label class="modal-call__label modal-basket__label" for="#">
+                            E-mail
+                            <input class="modal-call__input modal-basket__input" type="phone" placeholder="Name@pochta.com" required>
+                          </label>
+                          <div class="modal-basket__box">
+                              <p class="modal-basket__text">
+                                Способ доставки
+                              </p>
+                              <label class="modal-basket__label--checkbox">
+                                <input class="modal-basket__label--input" type="checkbox" name="group1[]">
+                                <p class="modal-basket__label--text">
+                                  Самовывоз
+                                  <span class="modal-basket__label--span">
+                                    (Украина, ул. Бакунинская 14, ст. 11)
+                                  </span>
+                                </p>
+                              </label>
+                              <label class="modal-basket__label--checkbox">
+                                <input class="modal-basket__label--input" type="checkbox" type="radio" checked name="group1[]">
+                                <p class="modal-basket__label--text">
+                                  Доставка
+                                </p>
+                              </label>
+                          </div>
+                          <div class="modal-basket__box">
+                              <p class="modal-basket__text">
+                                Адрес доставки
+                              </p>
+                              <label class="modal-call__label modal-basket__label">
+                                <input class="modal-call__input modal-basket__input" type="text" placeholder="Ул. Наличная д. 35, кв. 563">
+                              </label>
+                          </div>
+                          <div class="modal-basket__box modal-basket__box--bottom">
+                              <p class="modal-basket__text">
+                                Способ оплаты
+                              </p>
+                              <label class="modal-basket__label--checkbox">
+                                <input class="modal-basket__label--input" type="checkbox" name="group2[]">
+                                <p class="modal-basket__label--text">
+                                  Наличными
+                                </p>
+                              </label>
+                              <label class="modal-basket__label--checkbox">
+                                <input class="modal-basket__label--input" type="checkbox" checked name="group2[]">
+                                <p class="modal-basket__label--text">
+                                  Банковской картой
+                                </p>
+                              </label>
+                              <label class="modal-basket__label--checkbox">
+                                <input class="modal-basket__label--input" type="checkbox" name="group2[]">
+                                <p class="modal-basket__label--text">
+                                  Безналичный расчет
+                                </p>
+                              </label>
+                          </div>
+                          <div class="modal-call__btn-center">
+                            <button class="modal-call__btn cart__result-btn modal-btn _modal-open" type="submit" data-modal-open="modal-37">
+                              оформить заказ
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="_modal" data-modal="modal-37">
+                  <div class="modal-bg">
+                    <div class="modal-body modal-basket">
+                      <div class="modal-close">
+                        <img src="images/svg/close-big.svg" alt="close">
+                      </div>
+                      <div class="modal-content modal-call modal-basket__wrapper">
+                        <h2 class="title title-form modal-call__title">
+                          Спасибо, что выбрали нас
+                        </h2>
+                        <div class="modal-basket__wrapper-box">
+                          <p class="modal-basket__wrapper-text">
+                            В ближайшее время с вами свяжется наш менеджер
+                            для подтвержения заказа
+                          </p>
+                          <p class="modal-basket__text">
+                            Мы в соц. сетях
+                          </p>
+                          <ul class="social-list social-list__modal">
+                            <li class="social-list__item">
+                              <a class="social-list__link" href="#">
+                                <img class="social-list__img" src="images/svg/whatsapp.svg" alt="whatsapp">
+                              </a>
+                            </li>
+                            <li class="social-list__item">
+                              <a class="social-list__link" href="#">
+                                <img class="social-list__img" src="images/svg/telegram.svg" alt="telegram">
+                              </a>
+                            </li>
+                          </ul>  
+                        </div>
+                        <h6 class="modal-basket__title">
+                          Рекомендуемые разделы, на основе вашего выбора
+                        </h6>
+                        <div class="modal-basket__box-list">
+                          <ul class="modal-basket__list">
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Гравировка на металле
+                              </a>
+                            </li>
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Гравировка на стекле
+                              </a>
+                            </li>
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Гравировка на коже
+                              </a>
+                            </li>
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Гравировка на дереве
+                              </a>
+                            </li>
+                          </ul>
+                          <ul class="modal-basket__list">
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Таблички на дверь
+                              </a>
+                            </li>
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Фасадные таблики
+                              </a>
+                            </li>
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Таблички на стол
+                              </a>
+                            </li>
+                            <li class="modal-basket__item">
+                              <a class="modal-basket__link" href="#">
+                                Шильды
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <h2 class="title title-form">
+          с этим товаром покупают
         </h2>
         <h3 class="subtitle">
           <a class="subtitle__link" href="#">
-            что необходимо знать
+            выберите понравившийся товар
           </a>
         </h3>
-        <div class="about-item">
-          <div class="about-items">
-            <img class="about-items__img" src="images/description/description-1.jpg" alt="images">
-            <div class="about-items__block">
-              <p class="about-items__text">
-                Лазерная гравировка - современная технология, которая позволяет наносить детализированное изображение на любой
-                материал.
-                Это может быть стекло, дерево или даже металл - в результате все равно получится изящное изображение, точно
-                соответствующее задумке автора.
-              </p>
-              <p class="about-items__text">
-                Гравировка в Украине - где заказать
-                Лазерная гравировка выполняется с применением современного оборудования, которое полностью контролируется
-                компьютером.
-                Это и гарантирует высокую точность нанесения изображений, безупречные тонкие линии и установленную глубину выреза,
-                которую
-                можно контролировать по желанию заказчика.
-              </p>
+        <div class="slider slider-product-card">
+          <div class="slider__items">
+            <div class="content-images content-images--product-card">
+              <div class="content-images__item product-tabs__item product-tabs__item--product-card">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg" alt="гравировка">
+                </a>
+                <div class="product-tabs__box">
+                  <h5 class="product-tabs__box-title">
+                    Зажигалкa
+                  </h5>
+                  <p class="product-tabs__text">
+                    Артикул 123123
+                  </p>
+                  <p class="product-tabs__text">
+                    Бренд Zippo
+                  </p>
+                  <p class="product-tabs__text">
+                    Размеры 30х50х10 мм
+                  </p>
+                  <div class="product-tabs__box-price">
+                    <span class="product-tabs__old-price">
+                      1000
+                    </span>
+                    <span class="product-tabs__new-price">
+                      2000 грн.
+                    </span>
+                  </div>
+                </div>
+                <div class="product-tabs__block product-tabs__block-btn">
+                  <button class="product-tabs__btn">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="content-images__item product-tabs__item product-tabs__item--product-card">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg" alt="гравировка">
+                </a>
+                <div class="product-tabs__box">
+                  <h5 class="product-tabs__box-title">
+                    Зажигалкa
+                  </h5>
+                  <p class="product-tabs__text">
+                    Артикул 123123
+                  </p>
+                  <p class="product-tabs__text">
+                    Бренд Zippo
+                  </p>
+                  <p class="product-tabs__text">
+                    Размеры 30х50х10 мм
+                  </p>
+                  <div class="product-tabs__box-price">
+                    <span class="product-tabs__old-price">
+                      1000
+                    </span>
+                    <span class="product-tabs__new-price">
+                      2000 грн.
+                    </span>
+                  </div>
+                </div>
+                <div class="product-tabs__block product-tabs__block-btn">
+                  <button class="product-tabs__btn">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="content-images__item product-tabs__item product-tabs__item--product-card">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg" alt="гравировка">
+                </a>
+                <div class="product-tabs__box">
+                  <h5 class="product-tabs__box-title">
+                    Зажигалкa
+                  </h5>
+                  <p class="product-tabs__text">
+                    Артикул 123123
+                  </p>
+                  <p class="product-tabs__text">
+                    Бренд Zippo
+                  </p>
+                  <p class="product-tabs__text">
+                    Размеры 30х50х10 мм
+                  </p>
+                  <div class="product-tabs__box-price">
+                    <span class="product-tabs__old-price">
+                      1000
+                    </span>
+                    <span class="product-tabs__new-price">
+                      2000 грн.
+                    </span>
+                  </div>
+                </div>
+                <div class="product-tabs__block product-tabs__block-btn">
+                  <button class="product-tabs__btn">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="content-images__item product-tabs__item product-tabs__item--product-card">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg" alt="гравировка">
+                </a>
+                <div class="product-tabs__box">
+                  <h5 class="product-tabs__box-title">
+                    Зажигалкa
+                  </h5>
+                  <p class="product-tabs__text">
+                    Артикул 123123
+                  </p>
+                  <p class="product-tabs__text">
+                    Бренд Zippo
+                  </p>
+                  <p class="product-tabs__text">
+                    Размеры 30х50х10 мм
+                  </p>
+                  <div class="product-tabs__box-price">
+                    <span class="product-tabs__old-price">
+                      1000
+                    </span>
+                    <span class="product-tabs__new-price">
+                      2000 грн.
+                    </span>
+                  </div>
+                </div>
+                <div class="product-tabs__block product-tabs__block-btn">
+                  <button class="product-tabs__btn">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="content-images__item product-tabs__item product-tabs__item--product-card">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg" alt="гравировка">
+                </a>
+                <div class="product-tabs__box">
+                  <h5 class="product-tabs__box-title">
+                    Зажигалкa
+                  </h5>
+                  <p class="product-tabs__text">
+                    Артикул 123123
+                  </p>
+                  <p class="product-tabs__text">
+                    Бренд Zippo
+                  </p>
+                  <p class="product-tabs__text">
+                    Размеры 30х50х10 мм
+                  </p>
+                  <div class="product-tabs__box-price">
+                    <span class="product-tabs__old-price">
+                      1000
+                    </span>
+                    <span class="product-tabs__new-price">
+                      2000 грн.
+                    </span>
+                  </div>
+                </div>
+                <div class="product-tabs__block product-tabs__block-btn">
+                  <button class="product-tabs__btn">
+                    В корзину
+                  </button>
+                </div>
+              </div>
+              <div class="content-images__item product-tabs__item product-tabs__item--product-card">
+                <a class="content-images__link" href="#">
+                  <img class="content-images__img product-tabs__img" src="images/content/product-11.jpg" alt="гравировка">
+                </a>
+                <div class="product-tabs__box">
+                  <h5 class="product-tabs__box-title">
+                    Зажигалкa
+                  </h5>
+                  <p class="product-tabs__text">
+                    Артикул 123123
+                  </p>
+                  <p class="product-tabs__text">
+                    Бренд Zippo
+                  </p>
+                  <p class="product-tabs__text">
+                    Размеры 30х50х10 мм
+                  </p>
+                  <div class="product-tabs__box-price">
+                    <span class="product-tabs__old-price">
+                      1000
+                    </span>
+                    <span class="product-tabs__new-price">
+                      2000 грн.
+                    </span>
+                  </div>
+                </div>
+                <div class="product-tabs__block product-tabs__block-btn">
+                  <button class="product-tabs__btn">
+                    В корзину
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="about-items">
-            <div class="about-items__block">
-              <p class="about-items__text">
-                Лазерная гравировка - современная технология, которая позволяет наносить детализированное изображение на любой
-                материал.
-                Это может быть стекло, дерево или даже металл - в результате все равно получится изящное изображение, точно
-                соответствующее задумке автора.
-              </p>
-              <p class="about-items__text">
-                Гравировка в Украине - где заказать
-                Лазерная гравировка выполняется с применением современного оборудования, которое полностью контролируется
-                компьютером.
-                Это и гарантирует высокую точность нанесения изображений, безупречные тонкие линии и установленную глубину выреза,
-                которую
-                можно контролировать по желанию заказчика.
-              </p>
-            </div>
-            <img class="about-items__img about-items__img--float" src="images/description/description-1.jpg" alt="images">
-          </div>
         </div>
       </div>
     </section>
-    <section class="requisites" style="background-image: url('images/engraving-bg.jpg');">
-      <div class="container">
-        <h2 class="title">
-          реквизиты
-        </h2>
-        <ul class="requisites__list">
-          <li class="requisites__item">
-            <p class="requisites__text-title">
-              Наименование компании:
-            </p>
-            <p class="requisites__text-title">
-              ООО “Алмаз”
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text">
-              Юридический адрес:
-            </p>
-            <p class="requisites__text-title">
-              105005, УКРАИНА, УЛ БАКУНИНСКАЯ, ДОМ 14, СТРОЕНИЕ 11 ЭТАЖ/ПОМ/КОМ 2/I/3
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text">
-              Фактический адрес:
-            </p>
-            <p class="requisites__text-title">
-              105005, УКРАИНА, УЛ БАКУНИНСКАЯ, ДОМ 14, СТРОЕНИЕ 11 ЭТАЖ/ПОМ/КОМ 2/I/3
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text-title">
-              ОГРН
-            </p>
-            <p class="requisites__text-title">
-              5177746257607
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text-title">
-              ИНН
-            </p>
-            <p class="requisites__text-title">
-              9709017272
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text-title">
-              БИК
-            </p>
-            <p class="requisites__text-title">
-              044525593
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text">
-              Банк
-            </p>
-            <p class="requisites__text-title">
-              АО "АЛЬФА-БАНК"
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text">
-              Расчетный счет
-            </p>
-            <p class="requisites__text-title">
-              40702810202680002739
-            </p>
-          </li>
-          <li class="requisites__item">
-            <p class="requisites__text">
-              Корреспондентский счет
-            </p>
-            <p class="requisites__text-title">
-              30101810200000000593
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="equipment">
-      <div class="container">
-        <h2 class="title">
-          лучшее оборудование
-        </h2>
-        <div class="about-items">
-          <img class="about-items__img" src="images/description/description-1.jpg" alt="images">
-          <div class="about-items__block">
-            <p class="about-items__text">
-              Лазерная гравировка - современная технология, которая позволяет наносить детализированное изображение на любой
-              материал.
-              Это может быть стекло, дерево или даже металл - в результате все равно получится изящное изображение, точно
-              соответствующее задумке автора.
-            </p>
-            <p class="about-items__text">
-              Гравировка в Украине - где заказать
-              Лазерная гравировка выполняется с применением современного оборудования, которое полностью контролируется
-              компьютером.
-              Это и гарантирует высокую точность нанесения изображений, безупречные тонкие линии и установленную глубину выреза,
-              которую
-              можно контролировать по желанию заказчика.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="possibilities" style="background-image: url('images/engraving-bg.jpg');">
-      <div class="container">
-        <h2 class="title">
-          наши возможности
-        </h2>
-        <div class="about-items">
-          <img class="about-items__img" src="images/description/description-1.jpg" alt="images">
-          <div class="about-items__block">
-            <p class="about-items__text">
-              Лазерная гравировка - современная технология, которая позволяет наносить детализированное изображение на любой
-              материал.
-              Это может быть стекло, дерево или даже металл - в результате все равно получится изящное изображение, точно
-              соответствующее задумке автора.
-            </p>
-            <p class="about-items__text">
-              Гравировка в Украине - где заказать
-              Лазерная гравировка выполняется с применением современного оборудования, которое полностью контролируется
-              компьютером.
-              Это и гарантирует высокую точность нанесения изображений, безупречные тонкие линии и установленную глубину выреза,
-              которую
-              можно контролировать по желанию заказчика.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
   </main>
 
   <footer class="footer" style="background-image: url('images/footer-bg.png');">
@@ -590,10 +896,10 @@
       </div>
       <div class="footer-inner">
         <div class="footer-inner__button">
-          <button class="footer-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-14">
+          <button class="footer-inner__btn modal-btn _modal-open" type="submit" data-modal-open="modal-15">
             Заказать звонок
           </button>
-          <div class="_modal" data-modal="modal-14">
+          <div class="_modal" data-modal="modal-15">
             <div class="modal-bg">
               <div class="modal-body">
                 <div class="modal-close">
